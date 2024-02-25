@@ -20,5 +20,5 @@ export const getRefreshToken = (user) => {
 };
 
 export const verifyToken = (token) => {
-  return (decodedToken = jwt.verify(token, JWT_SECRET));
+  return jwt.verify(token, JWT_SECRET);
 };
